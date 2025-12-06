@@ -1,0 +1,23 @@
+.WeatherApp {
+    font-family: Arial, Helvetica, sans-serif; 
+    border: 1px solid rgb(207, 204, 204);
+    padding: 16px;
+    margin: 30px;
+    color: #5c5b5d;
+}
+
+.WeatherApp h1{
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 29px;
+}
+.WeatherApp ul{
+    margin: 0;
+    padding: 0;
+}
+.WeatherApp li{
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 19px;
+    list-style: none;
+}
