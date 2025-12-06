@@ -1,23 +1,35 @@
 .WeatherApp {
-    font-family: Arial, Helvetica, sans-serif; 
     border: 1px solid rgb(207, 204, 204);
     padding: 16px;
-    margin: 30px;
     color: #5c5b5d;
+    border-radius: 5px;
+}
+.WeatherApp .btn {
+    background-color: rgb(200, 207, 248);
+    color: rgb(59, 11, 54);
 }
 
-.WeatherApp h1{
+.WeatherApp h1 {
     font-size: 24px;
     font-weight: 100;
+    margin: 20px 0 0 0;
     line-height: 29px;
 }
-.WeatherApp ul{
-    margin: 0;
+.WeatherApp ul {
+    margin-top: 20px;
     padding: 0;
 }
-.WeatherApp li{
+.WeatherApp li {
     font-size: 16px;
     font-weight: 100;
     line-height: 19px;
     list-style: none;
+}
+.WeatherApp img {
+    margin-bottom: 39px;
+}
+.WeatherApp .temp {
+    font-weight: bold;
+    color: rgb(33, 33, 33);
+    font-size: 64px;
 }
