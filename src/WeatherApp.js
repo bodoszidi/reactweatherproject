@@ -17,7 +17,7 @@ export default function WeatherApp() {
             date: new Date(response.data.time * 1000),
             humidity: response.data.temperature.humidity,
             condition: response.data.condition.description,
-            img: response.data.condition.icon_url,
+            icon: response.data.condition.icon,
             weather: response.data.time,
         });
     }
