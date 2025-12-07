@@ -38,9 +38,10 @@
         padding: 5px;
     }
     .WeatherApp img {
+        width: 80px;
         margin-bottom: 29px;
     }
     .WeatherApp .temp {
-        font-size: 44px;
+        font-size: 45px;
     }
 }
