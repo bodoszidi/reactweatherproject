@@ -8,15 +8,16 @@
     background-color: rgb(200, 207, 248);
     color: rgb(59, 11, 54);
 }
+.WeatherApp
 
 .WeatherApp h1 {
     font-size: 24px;
-    font-weight: 100;
+    font-weight: bolder;
     margin: 20px 0 0 0;
     line-height: 29px;
 }
 .WeatherApp ul {
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 0;
 }
 .WeatherApp li {
@@ -32,4 +33,13 @@
     font-weight: bold;
     color: rgb(33, 33, 33);
     font-size: 64px;
+}
+
+@media (max-width: 800px) {
+    .WeatherApp img {
+    margin-bottom: 29px;
+}
+    .WeatherApp .temp {
+    font-size: 44px;
+}
 }
