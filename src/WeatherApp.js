@@ -1,27 +1,29 @@
 import { useState } from "react";
 import "./WeatherApp.css";
+import FormatedDate from "./FormatedDate";
 import axios from "axios";
 
 export default function WeatherApp() {
-    const [ready, setReady] = useState(false);
-    const [weather, setWeather] = useState({});
+    const [weather, setWeather] = useState({ ready: false });
+   
     function handleResponse(response) {
-        console.log(response);
+
+        console.log(response.data);
 
         setWeather({
+            ready: true,
             temperature: Math.round(response.data.temperature.current),
             wind: response.data.wind.speed,
             city: response.data.city,
+            date: new Date(response.data.time * 1000),
             humidity: response.data.temperature.humidity,
             condition: response.data.condition.description,
             img: response.data.condition.icon_url,
             weather: response.data.time,
         });
-
-        setReady(true);
     }
 
-    if (ready) {
+    if (weather.ready) {
         return (
             <div className="WeatherApp">
                 <form>
@@ -48,7 +50,7 @@ export default function WeatherApp() {
                         <h1>{weather.city}</h1>
                         <ul>
                             <li>
-                                <strong>Saturday</strong> {weather.time}
+                                <FormatedDate date={weather.date} />
                             </li>
                             <li>{weather.condition}</li>
                         </ul>
