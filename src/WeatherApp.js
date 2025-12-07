@@ -15,7 +15,7 @@ export default function WeatherApp() {
             humidity: response.data.temperature.humidity,
             condition: response.data.condition.description,
             img: response.data.condition.icon_url,
-            weather: response.date.time,
+            weather: response.data.time,
         });
 
         setReady(true);
