@@ -26,7 +26,7 @@ export default function WeatherApp() {
             <div className="WeatherApp">
                 <form>
                     <div className="row m-2">
-                        <div className="col-9 py-4">
+                        <div className="col-12 col-md-9 py-md-4 ">
                             <input
                                 type="search"
                                 placeholder="Enter a city"
@@ -34,7 +34,7 @@ export default function WeatherApp() {
                                 autoFocus="on"
                             />
                         </div>
-                        <div className="col-3 py-4">
+                        <div className="col-12 col-md-3 py-4">
                             <input
                                 type="submit"
                                 value="Search"
@@ -55,12 +55,12 @@ export default function WeatherApp() {
                     </div>
                 </div>
                 <div className="row m-2">
-                    <div className="col-6">
+                    <div className="col-12 col-md-6">
                         <img src={weather.img} alt={weather.condition} />
                         <span className="temp">{weather.temperature}</span>
                         <span className="unit">°C</span>
                     </div>
-                    <div className="col-6">
+                    <div className="col-12 col-md-6">
                         <ul>
                             <li>Humidity: {weather.humidity}%</li>
                             <li>Wind: {weather.wind} km/h</li>
