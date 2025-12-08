@@ -24,21 +24,10 @@
     line-height: 19px;
     list-style: none;
 }
-.WeatherApp img {
-    margin-bottom: 39px;
-}
-.WeatherApp .temp {
-    font-weight: bold;
-    color: rgb(33, 33, 33);
-    font-size: 64px;
-}
+
 
 @media (max-width: 800px) {
   
-    .WeatherApp img {
-        width: 80px;
-        margin-bottom: 29px;
-    }
     .WeatherApp .temp {
         font-size: 45px;
     }
