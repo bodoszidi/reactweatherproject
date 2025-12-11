@@ -3,6 +3,13 @@
 }
 
 .WeatherForecast-temperatures {
-  font-size: 30px;
+  font-size: 12px;
+}
+.WeatherForecast-temperature-max {
+  font-size: 12px;
+  font-weight: bold;
+}
+.WeatherForecast-day{
+  font-size: 14px;
   font-weight: bold;
 }

@@ -18,7 +18,6 @@ export default function WeatherApp() {
             humidity: response.data.temperature.humidity,
             condition: response.data.condition.description,
             icon: response.data.condition.icon,
-            weather: response.data.time,
         });
     }
 
