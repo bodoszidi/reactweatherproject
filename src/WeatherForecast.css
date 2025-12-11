@@ -1,0 +1,8 @@
+.WeatherForecast {
+  text-align: center;
+}
+
+.WeatherForecast-temperatures {
+  font-size: 30px;
+  font-weight: bold;
+}
